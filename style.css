@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+}
+body{
+    background: linear-gradient(270deg, #2b2e38, #314790, #0941fb, #bcccff);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+.start{
+    position: absolute;
+    top: 450px;
+    left: 280px;
+    font-size: 50px;
+    background-color: white;
+    border-radius: 11px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 3px black;
+}
+.start:hover{
+    color: blue;
+    border: 3px solid rgb(40, 4, 201);
+}
+.next{
+    position: absolute;
+    top: 450px;
+    left: 1000px;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 11px;
+    padding: 10px;
+    cursor: pointer;
+    display: none;
+    box-shadow: 3px 3px 3px black;
+}
+.next:hover{
+    border: 3px solid rgb(51, 50, 50);
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.content .content-flex{
+    background-image: url(img/Fundo.png);
+    width: 1000px;
+    height: 600px;
+    background-size: cover;
+    border-radius: 11px;
+}
+
+.content-flex h1{
+    font: bolder;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 70px;
+    animation: colo 3s infinite;
+}
+.topo{
+    display:flex;
+    position: absolute;
+    top: 175px;
+    left: 490px;
+    font-size: 30px;
+    text-align: center;
+}
+.topo div{
+    cursor: default;
+}
+.topo-hab{
+    width: 150px;
+}
+.topo-dan{
+    margin-left: 90px;
+    width: 70px;
+}
+.topo-vi{
+    margin-left: 100px;
+    margin-top: 3px;
+    width: 70px;
+    height: 30px;
+    text-align: center;
+}
+.habilidades{
+    position: absolute;
+    top: 230px;
+    left: 490px;
+    display: none;
+    font-size: 23px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.dano{
+    position: absolute;
+    top: 230px;
+    left: 750px;
+    font-size: 23px;
+    display: none;
+}
+.vida{
+    position: absolute;
+    top: 270px;
+    left: 900px;
+    font-size: 50px;
+    display: none;
+}
+.fala-sans{
+    position: absolute;
+    top: 430px;
+    left: 500px;
+    background-color: white;
+    border-radius: 11px;
+    padding: 10px;
+    cursor: default;
+    display: none;
+    box-shadow: 3px 3px 3px black;
+}
+.fala-panda{
+    position: absolute;
+    top: 490px;
+    left: 500px;
+    display: none;
+    background-color: white;
+    border-radius: 11px;
+    padding: 10px;
+    cursor: default;
+    box-shadow: 3px 3px 3px black;
+}
+
+
+
+
+
+
+
+
+/* ANIMAÇÕES */
+@keyframes colo{
+    0%{color: #ff0000;}
+    20%{color: #f79418;}
+    40%{color: #fcef1b;}
+    60%{color: #36b649;}
+    80%{color: #24ade3;}
+    90%{color:#2a2d93 ;}
+    100%{color:#662992 ;}
+}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+/* END-ANIMAÇÕES */
